@@ -5,7 +5,5 @@ services:
         image: 'evanbuss/openbooks:latest'
         volumes:
             - '/mnt/user/media/library/chaptarr-import:/books'
-        environment:
-          - BASE_PATH = '/mnt/user/appdata/openbooks/
         ports:
             - '8875:80'
