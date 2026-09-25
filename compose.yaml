@@ -7,3 +7,8 @@ services:
             - '/mnt/user/media/library/chaptarr-import:/books'
         ports:
             - '8875:80'
+        environment:
+            - PUID=99
+            - PGID=100
+            - UMASK=000
+            - TZ=America/New_York
