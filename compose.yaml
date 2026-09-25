@@ -1,9 +1,11 @@
 version: '3.9'
 services:
     openbooks:
-        command: '--persist --name rickastley'
+        command: '--persist --name qball_222'
         image: 'evanbuss/openbooks:latest'
         volumes:
-            - '/mnt/user/media/library/chaptarr-import:/import'
+            - '/mnt/user/media/library/chaptarr-import:/books'
+        environment:
+          - BASE_PATH = '/mnt/user/appdata/openbooks/
         ports:
             - '8875:80'
