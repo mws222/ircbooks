@@ -4,6 +4,6 @@ services:
         command: '--persist --name rickastley'
         image: 'evanbuss/openbooks:latest'
         volumes:
-            - '/mnt/media/library/chaptarr-import'
+            - '/mnt/user/media/library/chaptarr-import:/import'
         ports:
             - '8875:80'
